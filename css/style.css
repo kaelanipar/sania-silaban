@@ -3,7 +3,7 @@
   --bg: #2f4454;
   --tag: #2e151b;
   --sekun: #376e6f;
-  --dark: #1c3334;
+  --dark: #000000;
 }
 
 * {
@@ -17,14 +17,25 @@
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
 }
 
 body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
   color: #000000;
-  min-height: 4000px;
+  min-height: 2200px;
 }
+
+/* Audio */
+/* .audio {
+  justify-content: center;
+  margin-top: 200%;
+  right: 0;
+  position: initial;
+  display: inline-flex;
+  text-align: center;
+} */
 
 /* Navbar */
 
@@ -33,7 +44,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5%;
-  background-color: #5effea;
+  background-color: rgb(244, 217, 189);
   border-bottom: 4px solid #000000;
   position: fixed;
   top: 0;
@@ -45,7 +56,7 @@ body {
 .navbar .navbar-logo {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   font-style: italic;
 }
 
@@ -57,7 +68,7 @@ body {
 .navbar .navbar-nav a {
   color: #000000;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0 2rem;
 }
 
@@ -96,7 +107,7 @@ body {
   position: absolute;
   top: 100%;
   right: 7%;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 50rem;
   height: 5rem;
   display: flex;
@@ -113,7 +124,7 @@ body {
 .navbar .search-form input {
   height: 100%;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--dark);
   padding: 1rem;
 }
@@ -127,10 +138,10 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/ica-bg.jpg");
+  background-image: url("../img/nia-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -158,7 +169,7 @@ body {
 
 .hero .content h1 {
   font-size: 5em;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.1;
 }
@@ -168,7 +179,7 @@ body {
 }
 
 .hero .content p {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #fff;
   margin-top: 1rem;
   line-height: 1.4;
@@ -189,14 +200,21 @@ body {
 }
 
 /* About Section */
+.figure .figcaptions {
+  position: relative;
+  text-align: center;
+}
+
 .about,
 .menu,
+.products,
 .contact {
   padding: 7.5rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
+.products h2,
 .contact h2 {
   text-align: center;
   font: size 2.6rem;
@@ -205,6 +223,7 @@ body {
 
 .about h2 span,
 .menu h2 span,
+.products h2 span,
 .contact h2 span {
   color: #ff9bcb;
 }
@@ -274,6 +293,47 @@ body {
 
 .menu .row .menu-card .menu-card-title {
   margin-top: 2rem auto 0.5rem;
+}
+
+/* Produk Section */
+.products .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.products .product-card {
+  text-align: center;
+  border: 1px solid #666;
+  padding: 2rem;
+}
+
+.products .product-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.products .product-icons a {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produk .product-icons a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.products .product-image img {
+  height: 25rem;
 }
 
 /* Contact Section */
@@ -389,7 +449,7 @@ footer .credit a {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #93e9ff;
+    background-color: #f6f6f6;
     width: 20rem;
     height: 100vh;
     transition: 0.5s;
