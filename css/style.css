@@ -299,8 +299,8 @@ h10:hover::before {
 
 h10::before {
   content: " ";
-  display: block;
-  position: absolute;
+  display: flex;
+  position: fixed !important;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
   background: hsl(325, 100%, 68%);
@@ -310,7 +310,8 @@ h10::before {
 
 h10{
   position: relative;
-  font-size: 3rem;
+  font-size: 6rem;
+  font-weight: 600;
 }
 
 
