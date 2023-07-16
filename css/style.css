@@ -24,7 +24,7 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
   color: #000000;
-  min-height: 2200px;
+  min-height: 2000px;
 }
 
 
@@ -310,8 +310,8 @@ h10::before {
 
 h10{
   position: relative;
-  font-size: 5rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 300;
 }
 
 
