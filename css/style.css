@@ -287,6 +287,41 @@ audio {
   margin-top: 2rem auto 0.5rem;
 }
 
+h10::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h10:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h10::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(325, 100%, 68%);
+  z-index: -1;
+  transition: transform .8s ease;
+}
+
+h10{
+  position: relative;
+  font-size: 3rem;
+}
+
+
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+
 /* Produk Section */
 .products .row {
   display: grid;
