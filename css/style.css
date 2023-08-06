@@ -249,6 +249,17 @@ audio {
 }
 
 /* Menu Section */
+/*scroll foto  */
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
 
 .menu h2,
 .contact h2,
